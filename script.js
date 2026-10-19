@@ -201,6 +201,17 @@ document.addEventListener('DOMContentLoaded', () => {
         'Interactive time-series dashboard for historical trend analysis and anomaly detection.'
       ],
       stack: ['Python', 'Time-Series DB', 'IoT Protocols', 'Dashboards', 'Event Alerts']
+    },
+    'modal-vslam': {
+      title: 'Real-Time Visual SLAM (Simultaneous Localization & Mapping)',
+      context: 'Spatial AI & Computer Vision — Currently in Active Development',
+      overview: 'Engineering an end-to-end Visual Simultaneous Localization and Mapping (VSLAM) system designed to compute accurate camera pose trajectories and incrementally construct 3D spatial representations from video streams in real time.',
+      points: [
+        'Robust visual odometry and feature tracking across sequential camera frames.',
+        'Real-time 3D landmark triangulation, keyframe management, and sparse point-cloud reconstruction.',
+        'Loop-closure verification and pose-graph bundle adjustment to eliminate accumulated trajectory drift.'
+      ],
+      stack: ['Python', 'PyTorch', 'OpenCV', 'Visual Odometry', 'VSLAM', 'Spatial AI', '3D Geometry']
     }
   };
 
