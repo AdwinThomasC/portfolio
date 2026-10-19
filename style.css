@@ -212,6 +212,15 @@ button, input, textarea {
   color: var(--text-main);
 }
 
+.nav-link.nav-highlight {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.nav-link.nav-highlight:hover {
+  color: var(--accent-hover);
+}
+
 .header-actions {
   display: flex;
   align-items: center;
@@ -652,6 +661,425 @@ button, input, textarea {
 .metric-sub {
   font-size: 0.72rem;
   color: var(--text-dim);
+}
+
+/* --------------------------------------------------
+   4.5. Career & Works in a Nutshell (Executive Bento Grid)
+   -------------------------------------------------- */
+.nutshell-section {
+  background: linear-gradient(180deg, var(--bg-page) 0%, var(--bg-card) 50%, var(--bg-page) 100%);
+  position: relative;
+}
+
+.nutshell-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--accent);
+  background-color: var(--accent-soft);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  padding: 4px 14px;
+  border-radius: var(--radius-full);
+  margin-bottom: 12px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.nutshell-badge-icon {
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
+}
+
+.nutshell-bento-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+}
+
+/* Bento Card Placements */
+.bento-current-role {
+  grid-column: span 7;
+}
+
+.bento-stack {
+  grid-column: span 5;
+}
+
+.bento-works-all {
+  grid-column: span 12;
+}
+
+.bento-pub {
+  grid-column: span 5;
+}
+
+.bento-edu {
+  grid-column: span 4;
+}
+
+.bento-cta-card {
+  grid-column: span 3;
+}
+
+/* Base Bento Card */
+.bento-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--trans-fast), border-color var(--trans-fast), box-shadow var(--trans-fast);
+}
+
+.bento-card:hover {
+  border-color: rgba(56, 189, 248, 0.35);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.bento-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.bento-badge {
+  font-size: 0.72rem;
+  font-family: var(--font-mono);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--accent);
+  background: var(--accent-soft);
+  padding: 3px 8px;
+  border-radius: var(--radius-xs);
+}
+
+.bento-period {
+  font-size: 0.78rem;
+  font-family: var(--font-mono);
+  color: var(--text-dim);
+}
+
+.bento-meta-tag {
+  font-size: 0.75rem;
+  font-family: var(--font-mono);
+  color: var(--text-dim);
+}
+
+.bento-header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.bento-subtitle-tag {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.bento-hint {
+  font-size: 0.76rem;
+  font-family: var(--font-mono);
+  color: var(--text-dim);
+}
+
+.bento-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-main);
+  letter-spacing: -0.01em;
+  margin-bottom: 4px;
+  line-height: 1.3;
+}
+
+.bento-sub {
+  font-size: 0.82rem;
+  color: var(--text-dim);
+  margin-bottom: 12px;
+}
+
+.bento-desc {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+  margin-bottom: 14px;
+}
+
+/* Stat Chips inside Card 1 */
+.bento-stats-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.bento-stat-chip {
+  background: var(--bg-subtle);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: 10px 12px;
+}
+
+.bento-stat-num {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-main);
+  font-family: var(--font-mono);
+}
+
+.bento-stat-lbl {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  line-height: 1.25;
+  margin-top: 2px;
+}
+
+/* Jump link */
+.nutshell-jump-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+  transition: gap var(--trans-fast);
+  margin-top: 14px;
+}
+
+.nutshell-jump-link svg {
+  width: 14px;
+  height: 14px;
+  transition: transform var(--trans-fast);
+}
+
+.nutshell-jump-link:hover {
+  text-decoration: underline;
+}
+
+.nutshell-jump-link:hover svg {
+  transform: translateX(3px);
+}
+
+/* Skills Cluster inside Card 2 */
+.bento-skills-cluster {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.bento-skill-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.bento-skill-cat {
+  font-size: 0.72rem;
+  font-family: var(--font-mono);
+  color: var(--text-dim);
+  width: 84px;
+  flex-shrink: 0;
+  text-transform: uppercase;
+}
+
+.bento-skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.bento-skill-tags .pill {
+  font-size: 0.74rem;
+  padding: 2px 7px;
+}
+
+/* Card 3: All 4 Flagship Works Grid */
+.bento-works-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  margin-top: 14px;
+}
+
+.bento-work-item {
+  background: var(--bg-subtle);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: border-color var(--trans-fast), background-color var(--trans-fast), transform var(--trans-fast);
+}
+
+.bento-work-item:hover {
+  border-color: var(--accent);
+  background-color: var(--bg-card-hover);
+  transform: translateY(-2px);
+}
+
+.work-badge-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.work-num {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.badge-cv {
+  background-color: rgba(168, 85, 247, 0.15);
+  color: #c084fc;
+}
+
+.badge-db {
+  background-color: rgba(16, 185, 129, 0.15);
+  color: #34d399;
+}
+
+.badge-iot {
+  background-color: rgba(245, 158, 11, 0.15);
+  color: #fbbf24;
+}
+
+.work-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-main);
+  line-height: 1.3;
+  margin-bottom: 4px;
+}
+
+.work-ctx {
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  margin-bottom: 8px;
+}
+
+.work-blurb {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+  margin-bottom: 14px;
+}
+
+.work-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-bottom: 12px;
+}
+
+.work-tags span {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  color: var(--text-muted);
+  padding: 2px 6px;
+  border-radius: var(--radius-xs);
+}
+
+.work-actions {
+  display: flex;
+  gap: 6px;
+}
+
+/* Card 5: Education secondary details */
+.bento-edu-secondary {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid var(--border-color);
+}
+
+.edu-sec-title {
+  font-size: 0.88rem;
+  color: var(--text-main);
+}
+
+.edu-sec-sub {
+  font-size: 0.78rem;
+  color: var(--text-dim);
+  margin-bottom: 6px;
+}
+
+.edu-sec-cert {
+  font-size: 0.76rem;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+}
+
+/* Card 6: Direct recruiter CTA */
+.status-dot-pulse {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #22c55e;
+  box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.25);
+}
+
+.bento-avail-box {
+  background: var(--bg-subtle);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: 10px;
+  margin: 12px 0 16px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.avail-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.bento-action-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.bento-social-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border-color);
+}
+
+.bento-social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  transition: color var(--trans-fast);
+}
+
+.bento-social-link:hover {
+  color: var(--accent);
 }
 
 /* --------------------------------------------------
@@ -1495,6 +1923,19 @@ button, input, textarea {
   .contact-split {
     grid-template-columns: 1fr;
   }
+
+  /* Bento Grid Responsive (Tablet) */
+  .bento-current-role,
+  .bento-stack,
+  .bento-pub,
+  .bento-edu,
+  .bento-cta-card {
+    grid-column: span 12;
+  }
+
+  .bento-works-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 680px) {
@@ -1516,6 +1957,27 @@ button, input, textarea {
 
   .metrics-grid {
     grid-template-columns: 1fr;
+  }
+
+  /* Bento Grid Responsive (Mobile) */
+  .bento-works-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bento-stats-row {
+    grid-template-columns: 1fr;
+  }
+
+  .bento-card-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .bento-skill-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
   }
 
   .summary-focus-grid {
