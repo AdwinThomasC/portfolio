@@ -335,11 +335,38 @@
               
               <div class="bento-works-grid">
                 
-                <!-- Work 1 -->
+                <!-- Work 1: Visual SLAM -->
                 <div class="bento-work-item">
                   <div class="work-item-top">
                     <div class="work-badge-row">
                       <span class="work-num">01</span>
+                      <span class="badge-role project-badge-active">Active R&amp;D</span>
+                    </div>
+                    <h4 class="work-title">Real-Time Visual SLAM &amp; Spatial AI</h4>
+                    <div class="work-ctx">Spatial AI &bull; Active Development</div>
+                    <p class="work-blurb">
+                      Real-time camera pose trajectory estimation, 3D point-cloud environment reconstruction, and loop-closure correction.
+                    </p>
+                  </div>
+                  <div class="work-item-bot">
+                    <div class="work-tags">
+                      <span>Python</span>
+                      <span>PyTorch</span>
+                      <span>OpenCV</span>
+                      <span>VSLAM</span>
+                    </div>
+                    <div class="work-actions">
+                      <button class="btn-sm btn-primary project-modal-btn" data-target="modal-vslam">Quick Details</button>
+                      <a href="#projects" class="btn-sm btn-secondary">Deep Dive &darr;</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Work 2: 24-OT Operations Tracker -->
+                <div class="bento-work-item">
+                  <div class="work-item-top">
+                    <div class="work-badge-row">
+                      <span class="work-num">02</span>
                       <span class="badge-role">Live Production</span>
                     </div>
                     <h4 class="work-title">24-Unit Real-Time Operations Tracker</h4>
@@ -361,11 +388,11 @@
                   </div>
                 </div>
 
-                <!-- Work 2 -->
+                <!-- Work 3: YOLOv7 Object Detection -->
                 <div class="bento-work-item">
                   <div class="work-item-top">
                     <div class="work-badge-row">
-                      <span class="work-num">02</span>
+                      <span class="work-num">03</span>
                       <span class="badge-role badge-cv">Computer Vision</span>
                     </div>
                     <h4 class="work-title">YOLOv7 Deep Learning Object Detection</h4>
@@ -387,11 +414,11 @@
                   </div>
                 </div>
 
-                <!-- Work 3 -->
+                <!-- Work 4: Secure RBAC Repository -->
                 <div class="bento-work-item">
                   <div class="work-item-top">
                     <div class="work-badge-row">
-                      <span class="work-num">03</span>
+                      <span class="work-num">04</span>
                       <span class="badge-role badge-db">Data Platform</span>
                     </div>
                     <h4 class="work-title">Secure RBAC Clinical Data Repository</h4>
@@ -408,32 +435,6 @@
                     </div>
                     <div class="work-actions">
                       <button class="btn-sm btn-primary project-modal-btn" data-target="modal-cancer">Quick Details</button>
-                      <a href="#projects" class="btn-sm btn-secondary">Deep Dive &darr;</a>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Work 4 -->
-                <div class="bento-work-item">
-                  <div class="work-item-top">
-                    <div class="work-badge-row">
-                      <span class="work-num">04</span>
-                      <span class="badge-role badge-iot">IoT Telemetry</span>
-                    </div>
-                    <h4 class="work-title">IoT Continuous Specimen Telemetry System</h4>
-                    <div class="work-ctx">Cold-Chain Monitoring</div>
-                    <p class="work-blurb">
-                      Hardware-to-cloud time-series data workflow with localized caching, continuous environmental logging, and automated deviation alerts.
-                    </p>
-                  </div>
-                  <div class="work-item-bot">
-                    <div class="work-tags">
-                      <span>Python</span>
-                      <span>Time-Series</span>
-                      <span>Alerting</span>
-                    </div>
-                    <div class="work-actions">
-                      <button class="btn-sm btn-primary project-modal-btn" data-target="modal-iot">Quick Details</button>
                       <a href="#projects" class="btn-sm btn-secondary">Deep Dive &darr;</a>
                     </div>
                   </div>
@@ -826,111 +827,11 @@
         </div>
 
         <div class="projects-grid">
-          <!-- Project 1: Real-Time Operations Tracker -->
-          <div class="project-box">
-            <div class="project-box-header">
-              <span class="project-type">Production System</span>
-              <span class="project-id">01</span>
-            </div>
-            <h3 class="project-name">Real-Time Operations &amp; Resource Management System</h3>
-            <div class="project-context">St. John’s Medical College &amp; Hospital</div>
-            <p class="project-summary">
-              Centralized monitoring system providing a consolidated real-time view of ongoing operations across 
-              <strong>24 live units</strong> and department-level bed occupancy, replacing fragmented manual logs.
-            </p>
-            <div class="project-highlights">
-              <div>• Live tracking across 24 units in active production use</div>
-              <div>• Ward-level capacity tracking to streamline operational planning</div>
-            </div>
-            <div class="project-stack">
-              <span>Python</span>
-              <span>SQL</span>
-              <span>Plotly Dash</span>
-              <span>Data Pipelines</span>
-            </div>
-            <button class="btn-text project-modal-btn" data-target="modal-hospital">View Details &rarr;</button>
-          </div>
-
-          <!-- Project 2: YOLOv7 Object Detection -->
-          <div class="project-box">
-            <div class="project-box-header">
-              <span class="project-type">Computer Vision</span>
-              <span class="project-id">02</span>
-            </div>
-            <h3 class="project-name">Object Detection Using Deep Learning (YOLOv7)</h3>
-            <div class="project-context">Validated Prototype Stage</div>
-            <p class="project-summary">
-              Built and evaluated a multi-class object detection pipeline using YOLOv7, covering dataset preparation, 
-              model training, validation, and real-time inference.
-            </p>
-            <div class="project-highlights">
-              <div>• Multi-class bounding-box model training &amp; hyperparameter tuning</div>
-              <div>• Validated prototype pipeline with real-time inference evaluation</div>
-            </div>
-            <div class="project-stack">
-              <span>Python</span>
-              <span>YOLOv7</span>
-              <span>PyTorch</span>
-              <span>OpenCV</span>
-            </div>
-            <button class="btn-text project-modal-btn" data-target="modal-yolo">View Details &rarr;</button>
-          </div>
-
-          <!-- Project 3: Breast Cancer Data Repository -->
-          <div class="project-box">
-            <div class="project-box-header">
-              <span class="project-type">Data Architecture</span>
-              <span class="project-id">03</span>
-            </div>
-            <h3 class="project-name">Breast Cancer Clinical Data Repository</h3>
-            <div class="project-context">Division of Molecular Medicine, SJRI</div>
-            <p class="project-summary">
-              Implemented a secure, queryable clinical data repository enabling structured storage, filtering, 
-              retrieval, and reuse of complex clinical datasets.
-            </p>
-            <div class="project-highlights">
-              <div>• Role-based access controls (RBAC) to protect sensitive data</div>
-              <div>• Relational schema with sub-second query filtering</div>
-            </div>
-            <div class="project-stack">
-              <span>Python</span>
-              <span>MySQL</span>
-              <span>Data Ingestion</span>
-              <span>Validation</span>
-            </div>
-            <button class="btn-text project-modal-btn" data-target="modal-cancer">View Details &rarr;</button>
-          </div>
-
-          <!-- Project 4: IoT-Based Temperature Monitoring -->
-          <div class="project-box">
-            <div class="project-box-header">
-              <span class="project-type">IoT &amp; Telemetry</span>
-              <span class="project-id">04</span>
-            </div>
-            <h3 class="project-name">IoT-Based Temperature Monitoring System</h3>
-            <div class="project-context">Telemetry &amp; Automated Alerting</div>
-            <p class="project-summary">
-              Developed an end-to-end IoT data workflow to collect, store, and visualize time-series temperature data, 
-              with threshold-based alerts for timely corrective action.
-            </p>
-            <div class="project-highlights">
-              <div>• Time-series ingestion with localized caching</div>
-              <div>• Threshold-triggered alerting workflow for rapid response</div>
-            </div>
-            <div class="project-stack">
-              <span>Python</span>
-              <span>Time-Series Storage</span>
-              <span>IoT Protocols</span>
-              <span>Dashboards</span>
-            </div>
-            <button class="btn-text project-modal-btn" data-target="modal-iot">View Details &rarr;</button>
-          </div>
-
-          <!-- Project 5: Visual SLAM (VSLAM) -->
+          <!-- Project 1: Visual SLAM (VSLAM) - Featured Active R&D -->
           <div class="project-box project-featured-rd">
             <div class="project-box-header">
               <span class="project-type project-badge-active">Active R&amp;D</span>
-              <span class="project-id">05</span>
+              <span class="project-id">01</span>
             </div>
             <h3 class="project-name">Real-Time Visual SLAM (Simultaneous Localization &amp; Mapping)</h3>
             <div class="project-context">Spatial AI &bull; Active Development</div>
@@ -951,6 +852,106 @@
               <span>3D Mapping</span>
             </div>
             <button class="btn-text project-modal-btn" data-target="modal-vslam">View Details &rarr;</button>
+          </div>
+
+          <!-- Project 2: Real-Time Operations Tracker -->
+          <div class="project-box">
+            <div class="project-box-header">
+              <span class="project-type">Production System</span>
+              <span class="project-id">02</span>
+            </div>
+            <h3 class="project-name">Real-Time Operations &amp; Resource Management System</h3>
+            <div class="project-context">St. John’s Medical College &amp; Hospital</div>
+            <p class="project-summary">
+              Centralized monitoring system providing a consolidated real-time view of ongoing operations across 
+              <strong>24 live units</strong> and department-level bed occupancy, replacing fragmented manual logs.
+            </p>
+            <div class="project-highlights">
+              <div>• Live tracking across 24 units in active production use</div>
+              <div>• Ward-level capacity tracking to streamline operational planning</div>
+            </div>
+            <div class="project-stack">
+              <span>Python</span>
+              <span>SQL</span>
+              <span>Plotly Dash</span>
+              <span>Data Pipelines</span>
+            </div>
+            <button class="btn-text project-modal-btn" data-target="modal-hospital">View Details &rarr;</button>
+          </div>
+
+          <!-- Project 3: YOLOv7 Object Detection -->
+          <div class="project-box">
+            <div class="project-box-header">
+              <span class="project-type">Computer Vision</span>
+              <span class="project-id">03</span>
+            </div>
+            <h3 class="project-name">Object Detection Using Deep Learning (YOLOv7)</h3>
+            <div class="project-context">Validated Prototype Stage</div>
+            <p class="project-summary">
+              Built and evaluated a multi-class object detection pipeline using YOLOv7, covering dataset preparation, 
+              model training, validation, and real-time inference.
+            </p>
+            <div class="project-highlights">
+              <div>• Multi-class bounding-box model training &amp; hyperparameter tuning</div>
+              <div>• Validated prototype pipeline with real-time inference evaluation</div>
+            </div>
+            <div class="project-stack">
+              <span>Python</span>
+              <span>YOLOv7</span>
+              <span>PyTorch</span>
+              <span>OpenCV</span>
+            </div>
+            <button class="btn-text project-modal-btn" data-target="modal-yolo">View Details &rarr;</button>
+          </div>
+
+          <!-- Project 4: Breast Cancer Data Repository -->
+          <div class="project-box">
+            <div class="project-box-header">
+              <span class="project-type">Data Architecture</span>
+              <span class="project-id">04</span>
+            </div>
+            <h3 class="project-name">Breast Cancer Clinical Data Repository</h3>
+            <div class="project-context">Division of Molecular Medicine, SJRI</div>
+            <p class="project-summary">
+              Implemented a secure, queryable clinical data repository enabling structured storage, filtering, 
+              retrieval, and reuse of complex clinical datasets.
+            </p>
+            <div class="project-highlights">
+              <div>• Role-based access controls (RBAC) to protect sensitive data</div>
+              <div>• Relational schema with sub-second query filtering</div>
+            </div>
+            <div class="project-stack">
+              <span>Python</span>
+              <span>MySQL</span>
+              <span>Data Ingestion</span>
+              <span>Validation</span>
+            </div>
+            <button class="btn-text project-modal-btn" data-target="modal-cancer">View Details &rarr;</button>
+          </div>
+
+          <!-- Project 5: IoT-Based Temperature Monitoring -->
+          <div class="project-box">
+            <div class="project-box-header">
+              <span class="project-type">IoT &amp; Telemetry</span>
+              <span class="project-id">05</span>
+            </div>
+            <h3 class="project-name">IoT-Based Temperature Monitoring System</h3>
+            <div class="project-context">Telemetry &amp; Automated Alerting</div>
+            <p class="project-summary">
+              Developed an end-to-end IoT data workflow to collect, store, and visualize time-series temperature data, 
+              with threshold-based alerts for timely corrective action.
+            </p>
+            <div class="project-highlights">
+              <div>• Time-series ingestion with localized caching</div>
+              <div>• Threshold-triggered alerting workflow for rapid response</div>
+            </div>
+            <div class="project-stack">
+              <span>Python</span>
+              <span>Time-Series Storage</span>
+              <span>IoT Protocols</span>
+              <span>Dashboards</span>
+            </div>
+            <button class="btn-text project-modal-btn" data-target="modal-iot">View Details &rarr;</button>
           </div>
         </div>
       </div>
