@@ -724,7 +724,7 @@
                 <strong>Data Consolidation &amp; Pipeline Architecture:</strong> Consolidated records and hospital information system data for <strong>5,000+ entities</strong> into analysis-ready datasets, improving data reliability for reporting and validation of pre-existing AI tools under the <em>ICMR CAR MEDTECH programme</em>.
               </li>
               <li>
-                <strong>Large-Scale Digital Tracking:</strong> Designed and implemented an end-to-end Test–Treat–Track monitoring system for the <em>ICMR PRAKASH project</em>, digitising screening, treatment initiation, and follow-up workflows while tracking data completeness and operational KPIs across <strong>40+ deployment locations</strong>.
+                <strong>Large-Scale Digital Tracking:</strong> Designed and implemented an end-to-end Test–Treat–Track monitoring system for the <em>ICMR PRAKASH project</em>, digitising screening, treatment initiation, and follow-up workflows while tracking data completeness and operational KPIs across <strong>40+ deployment locations</strong>. <button class="btn-text project-modal-btn" data-target="modal-prakash" style="margin-left: 4px; font-size: 0.78rem; font-weight: 600; text-decoration: underline; text-underline-offset: 3px; color: var(--accent);">[View 6 Dashboards &rarr;]</button>
               </li>
               <li>
                 <strong>Automated KPI Reporting:</strong> Provided programme managers, the District Health Officer, and institutional leadership with near-real-time visibility into screening progress, treatment initiation, follow-up status, data gaps, coverage issues, and operational bottlenecks by replacing disconnected manual reporting workflows with automated KPI tracking.
@@ -736,10 +736,10 @@
                 <strong>Grant Funding Contribution:</strong> Contributed to securing an <strong>INR 1.10 crore ICMR grant</strong> supporting implementation and scale-up of the system in Koppal district.
               </li>
               <li>
-                <strong>Real-Time Operations Tracking:</strong> Developed a centralized system for St. John’s Medical College and Hospital providing a <strong>real-time, consolidated view of operations in progress across 24 units</strong>, replacing fragmented ward-level tracking and currently in active production use.
+                <strong>Real-Time Operations Tracking:</strong> Developed a centralized system for St. John’s Medical College and Hospital providing a <strong>real-time, consolidated view of operations in progress across 24 units</strong>, replacing fragmented ward-level tracking and currently in active production use. <button class="btn-text project-modal-btn" data-target="modal-otms" style="margin-left: 4px; font-size: 0.78rem; font-weight: 600; text-decoration: underline; text-underline-offset: 3px; color: var(--accent);">[View Live OT Board &rarr;]</button>
               </li>
               <li>
-                <strong>Capacity Monitoring:</strong> Built a bed occupancy monitoring system to track real-time bed availability by ward and department, providing staff and administrators with visibility to support operational planning.
+                <strong>Capacity Monitoring:</strong> Built a bed occupancy monitoring system to track real-time bed availability by ward and department, providing staff and administrators with visibility to support operational planning. <button class="btn-text project-modal-btn" data-target="modal-bed" style="margin-left: 4px; font-size: 0.78rem; font-weight: 600; text-decoration: underline; text-underline-offset: 3px; color: var(--accent);">[View Bed Census UI &rarr;]</button>
               </li>
             </ul>
 
@@ -829,6 +829,13 @@
         <div class="projects-grid">
           <!-- Project 1: Visual SLAM (VSLAM) - Featured Active R&D -->
           <div class="project-box project-featured-rd">
+            <div class="project-media-wrap" data-target="modal-vslam" title="Click to inspect Visual SLAM 3D point cloud & odometry">
+              <img src="assets/projects/vslam_tracking.png" alt="Real-Time Visual SLAM 3D point cloud and camera trajectory tracking" class="project-thumb-img" loading="lazy">
+              <div class="project-media-overlay">
+                <span class="media-pill-tag">Spatial Point Cloud &bull; Visual Odometry</span>
+                <span class="media-expand-btn">Inspect System UI &rarr;</span>
+              </div>
+            </div>
             <div class="project-box-header">
               <span class="project-type project-badge-active">Active R&amp;D</span>
               <span class="project-id">01</span>
@@ -854,36 +861,143 @@
             <button class="btn-text project-modal-btn" data-target="modal-vslam">View Details &rarr;</button>
           </div>
 
-          <!-- Project 2: Real-Time Operations Tracker -->
+          <!-- Project 2: PRAKASH Digital Test-Treat-Track Platform -->
           <div class="project-box">
+            <div class="project-media-wrap" data-target="modal-prakash" title="Click to view 6 PRAKASH production dashboards">
+              <img src="assets/projects/prakash_district_dashboard.png" alt="PRAKASH District Anemia Monitoring Dashboard and Geo-Heat Map" class="project-thumb-img" loading="lazy">
+              <div class="project-media-overlay">
+                <span class="media-pill-tag">6 Production Views &bull; GIS Maps</span>
+                <span class="media-expand-btn">View 6 Dashboards &rarr;</span>
+              </div>
+            </div>
             <div class="project-box-header">
-              <span class="project-type">Production System</span>
+              <span class="project-type">Public Health Scale-Up</span>
               <span class="project-id">02</span>
             </div>
-            <h3 class="project-name">Real-Time Operations &amp; Resource Management System</h3>
-            <div class="project-context">St. John’s Medical College &amp; Hospital</div>
+            <h3 class="project-name">PRAKASH — Digital Test &middot; Treat &middot; Track System</h3>
+            <div class="project-context">ICMR Grant Scale-Up (INR 1.10 Cr) &bull; Koppal District (40+ Centers)</div>
             <p class="project-summary">
-              Centralized monitoring system providing a consolidated real-time view of ongoing operations across 
-              <strong>24 live units</strong> and department-level bed occupancy, replacing fragmented manual logs.
+              Architected and deployed an end-to-end digital tracking platform digitizing anemia screening, classification, 
+              targeted treatment, and longitudinal follow-up across <strong>40+ healthcare centers</strong> in Koppal district.
             </p>
             <div class="project-highlights">
-              <div>• Live tracking across 24 units in active production use</div>
-              <div>• Ward-level capacity tracking to streamline operational planning</div>
+              <div>• District-level real-time dashboard with anemia burden geo-heat mapping</div>
+              <div>• Individual Beneficiary Tracker and ASHA Coordination Board for field compliance</div>
+            </div>
+            <div class="project-stack">
+              <span>Python</span>
+              <span>PostgreSQL</span>
+              <span>Data Pipelines</span>
+              <span>GIS Heatmaps</span>
+              <span>Field Tech</span>
+            </div>
+            <button class="btn-text project-modal-btn" data-target="modal-prakash">View Details &rarr;</button>
+          </div>
+
+          <!-- Project 3: OTMS — Operation Theatre Information Management System -->
+          <div class="project-box">
+            <div class="project-media-wrap" data-target="modal-otms" title="Click to view 4 OTMS dashboards">
+              <img src="assets/projects/otms_live_board.png" alt="OTMS Live 24-OT Operations Tracker and Surgery Status Board" class="project-thumb-img" loading="lazy">
+              <div class="project-media-overlay">
+                <span class="media-pill-tag">4 Dashboards &bull; 24 Live OTs</span>
+                <span class="media-expand-btn">View OT System &rarr;</span>
+              </div>
+            </div>
+            <div class="project-box-header">
+              <span class="project-type">Production System</span>
+              <span class="project-id">03</span>
+            </div>
+            <h3 class="project-name">OTMS — Operation Theatre Information Management System</h3>
+            <div class="project-context">St. John’s Medical College &amp; Hospital &bull; Active Production Use</div>
+            <p class="project-summary">
+              Centralized surgical operations tracking system providing surgical directors and hospital administration 
+              with live status visibility and room turnover tracking across <strong>24 concurrent live units</strong>.
+            </p>
+            <div class="project-highlights">
+              <div>• Live surgery phase milestone tracking, replacing manual whiteboards and phone check-ins</div>
+              <div>• Operational analytics dashboard visualizing surgical volumes, emergency queues, and room turnover</div>
             </div>
             <div class="project-stack">
               <span>Python</span>
               <span>SQL</span>
               <span>Plotly Dash</span>
-              <span>Data Pipelines</span>
+              <span>HIS Integration</span>
+              <span>Analytics</span>
             </div>
-            <button class="btn-text project-modal-btn" data-target="modal-hospital">View Details &rarr;</button>
+            <button class="btn-text project-modal-btn" data-target="modal-otms">View Details &rarr;</button>
           </div>
 
-          <!-- Project 3: YOLOv7 Object Detection -->
+          <!-- Project 4: St. John's Bed Monitoring System -->
+          <div class="project-box">
+            <div class="project-media-wrap" data-target="modal-bed" title="Click to view 4 Bed Monitoring dashboards">
+              <img src="assets/projects/bed_monitoring_overview.png" alt="St. John's Bed Monitoring System Dashboard" class="project-thumb-img" loading="lazy">
+              <div class="project-media-overlay">
+                <span class="media-pill-tag">4 Views &bull; Hospital Census</span>
+                <span class="media-expand-btn">View Census UI &rarr;</span>
+              </div>
+            </div>
+            <div class="project-box-header">
+              <span class="project-type">Production System</span>
+              <span class="project-id">04</span>
+            </div>
+            <h3 class="project-name">St. John&rsquo;s Bed Monitoring System</h3>
+            <div class="project-context">St. John’s Medical College &amp; Hospital &bull; Inpatient Operations</div>
+            <p class="project-summary">
+              Enterprise bed census and capacity tracking platform providing real-time visibility into bed availability 
+              across General Wards, Semi-Private, and ICUs to eliminate admission coordination delays.
+            </p>
+            <div class="project-highlights">
+              <div>• Granular department-by-department census tracking across all inpatient wings</div>
+              <div>• Real-time admission readiness and bed sanitization turnaround tracking</div>
+            </div>
+            <div class="project-stack">
+              <span>Python</span>
+              <span>SQL</span>
+              <span>Data Pipelines</span>
+              <span>Plotly Dash</span>
+              <span>Healthcare Ops</span>
+            </div>
+            <button class="btn-text project-modal-btn" data-target="modal-bed">View Details &rarr;</button>
+          </div>
+
+          <!-- Project 5: Temp Track (IoT Temperature Monitoring) -->
+          <div class="project-box">
+            <div class="project-media-wrap" data-target="modal-temptrack" title="Click to inspect Temp Track IoT telemetry dashboard">
+              <img src="assets/projects/temptrack_dashboard.png" alt="Temp Track IoT Temperature Monitoring Dashboard" class="project-thumb-img" loading="lazy">
+              <div class="project-media-overlay">
+                <span class="media-pill-tag">IoT Telemetry &bull; Alerts</span>
+                <span class="media-expand-btn">Inspect UI &rarr;</span>
+              </div>
+            </div>
+            <div class="project-box-header">
+              <span class="project-type">IoT &amp; Telemetry</span>
+              <span class="project-id">05</span>
+            </div>
+            <h3 class="project-name">Temp Track — IoT-Based Temperature Monitoring System</h3>
+            <div class="project-context">Telemetry &amp; Automated Threshold Alerting</div>
+            <p class="project-summary">
+              Developed an end-to-end IoT data workflow to continuously collect, store, and visualize time-series 
+              temperature telemetry with automated threshold alerts for timely corrective action.
+            </p>
+            <div class="project-highlights">
+              <div>• Time-series ingestion pipeline with localized network caching to prevent dropout</div>
+              <div>• Real-time automated threshold excursion alerts and interactive trend analysis</div>
+            </div>
+            <div class="project-stack">
+              <span>Python</span>
+              <span>Time-Series Storage</span>
+              <span>IoT Protocols</span>
+              <span>Alerting</span>
+              <span>Dashboards</span>
+            </div>
+            <button class="btn-text project-modal-btn" data-target="modal-temptrack">View Details &rarr;</button>
+          </div>
+
+          <!-- Project 6: YOLOv7 Object Detection -->
           <div class="project-box">
             <div class="project-box-header">
               <span class="project-type">Computer Vision</span>
-              <span class="project-id">03</span>
+              <span class="project-id">06</span>
             </div>
             <h3 class="project-name">Object Detection Using Deep Learning (YOLOv7)</h3>
             <div class="project-context">Validated Prototype Stage</div>
@@ -904,11 +1018,11 @@
             <button class="btn-text project-modal-btn" data-target="modal-yolo">View Details &rarr;</button>
           </div>
 
-          <!-- Project 4: Breast Cancer Data Repository -->
+          <!-- Project 7: Breast Cancer Data Repository -->
           <div class="project-box">
             <div class="project-box-header">
               <span class="project-type">Data Architecture</span>
-              <span class="project-id">04</span>
+              <span class="project-id">07</span>
             </div>
             <h3 class="project-name">Breast Cancer Clinical Data Repository</h3>
             <div class="project-context">Division of Molecular Medicine, SJRI</div>
@@ -927,31 +1041,6 @@
               <span>Validation</span>
             </div>
             <button class="btn-text project-modal-btn" data-target="modal-cancer">View Details &rarr;</button>
-          </div>
-
-          <!-- Project 5: IoT-Based Temperature Monitoring -->
-          <div class="project-box">
-            <div class="project-box-header">
-              <span class="project-type">IoT &amp; Telemetry</span>
-              <span class="project-id">05</span>
-            </div>
-            <h3 class="project-name">IoT-Based Temperature Monitoring System</h3>
-            <div class="project-context">Telemetry &amp; Automated Alerting</div>
-            <p class="project-summary">
-              Developed an end-to-end IoT data workflow to collect, store, and visualize time-series temperature data, 
-              with threshold-based alerts for timely corrective action.
-            </p>
-            <div class="project-highlights">
-              <div>• Time-series ingestion with localized caching</div>
-              <div>• Threshold-triggered alerting workflow for rapid response</div>
-            </div>
-            <div class="project-stack">
-              <span>Python</span>
-              <span>Time-Series Storage</span>
-              <span>IoT Protocols</span>
-              <span>Dashboards</span>
-            </div>
-            <button class="btn-text project-modal-btn" data-target="modal-iot">View Details &rarr;</button>
           </div>
         </div>
       </div>
