@@ -103,7 +103,7 @@
 
           <h1 class="hero-heading">
             Hi, I’m Adwin Thomas C.
-            <span class="hero-subtext">Data Scientist building data pipelines, machine learning models, and real-time operational systems.</span>
+            <span class="hero-subtext">Data Scientist building data pipelines, machine learning models, and real-time operational systems. Currently engineering Visual SLAM (VSLAM) solutions.</span>
           </h1>
 
           <p class="hero-description">
@@ -156,12 +156,13 @@
         
         self.core_stack = [
             <span class="c-string">"Python"</span>, <span class="c-string">"SQL"</span>, <span class="c-string">"R"</span>, 
-            <span class="c-string">"Plotly Dash"</span>, <span class="c-string">"Power BI"</span>, <span class="c-string">"MySQL"</span>,
-            <span class="c-string">"PyTorch / YOLOv7"</span>, <span class="c-string">"AWS"</span>
+            <span class="c-string">"PyTorch / YOLOv7"</span>, <span class="c-string">"Visual SLAM (VSLAM)"</span>,
+            <span class="c-string">"Plotly Dash"</span>, <span class="c-string">"Power BI"</span>, <span class="c-string">"AWS"</span>
         ]
         
     <span class="c-keyword">def</span> <span class="c-func">current_focus</span>(self):
         <span class="c-keyword">return</span> {
+            <span class="c-string">"spatial_ai"</span>: <span class="c-string">"Real-time Visual SLAM (VSLAM) in development"</span>,
             <span class="c-string">"pipelines"</span>: <span class="c-string">"Automated ETL &amp; validation"</span>,
             <span class="c-string">"operations"</span>: <span class="c-string">"Live tracking across 24 units"</span>,
             <span class="c-string">"scale"</span>: <span class="c-string">"50K+ records, 40+ field sites"</span>
@@ -290,8 +291,8 @@
                   <div class="bento-skill-tags">
                     <span class="pill primary">PyTorch</span>
                     <span class="pill primary">YOLOv7</span>
+                    <span class="pill primary">Visual SLAM</span>
                     <span class="pill">OpenCV</span>
-                    <span class="pill">Scikit-Learn</span>
                   </div>
                 </div>
                 <div class="bento-skill-row">
@@ -565,8 +566,8 @@
               <p>Designing automated data ingestion, validation checks, and data preparation workflows to eliminate manual reporting bottlenecks.</p>
             </div>
             <div class="focus-item">
-              <div class="focus-title">Machine Learning &amp; CV</div>
-              <p>Developing supervised learning models, classification pipelines, object detection (YOLOv7), and statistical validation.</p>
+              <div class="focus-title">Machine Learning &amp; Computer Vision</div>
+              <p>Developing supervised learning models, object detection pipelines (YOLOv7), and currently engineering real-time Visual SLAM (VSLAM) systems for spatial mapping and camera pose estimation.</p>
             </div>
             <div class="focus-item">
               <div class="focus-title">Real-Time Operational Systems</div>
@@ -638,14 +639,16 @@
           <!-- Machine Learning -->
           <div class="skill-group-card" data-category="ml">
             <div class="group-header">
-              <span class="group-title">Machine Learning</span>
-              <span class="group-count">4 domains</span>
+              <span class="group-title">Machine Learning &amp; CV</span>
+              <span class="group-count">6 domains</span>
             </div>
             <div class="skill-pills">
+              <span class="pill primary">Visual SLAM (VSLAM)</span>
+              <span class="pill primary">YOLOv7 / Computer Vision</span>
               <span class="pill primary">Supervised Learning</span>
-              <span class="pill">Classification</span>
-              <span class="pill primary">Medical Imaging Analysis</span>
-              <span class="pill">YOLOv7 / Computer Vision</span>
+              <span class="pill">Visual Odometry</span>
+              <span class="pill">Spatial Mapping</span>
+              <span class="pill">Medical Imaging</span>
             </div>
           </div>
 
@@ -921,6 +924,33 @@
               <span>Dashboards</span>
             </div>
             <button class="btn-text project-modal-btn" data-target="modal-iot">View Details &rarr;</button>
+          </div>
+
+          <!-- Project 5: Visual SLAM (VSLAM) -->
+          <div class="project-box project-featured-rd">
+            <div class="project-box-header">
+              <span class="project-type project-badge-active">Active R&amp;D</span>
+              <span class="project-id">05</span>
+            </div>
+            <h3 class="project-name">Real-Time Visual SLAM (Simultaneous Localization &amp; Mapping)</h3>
+            <div class="project-context">Spatial AI &bull; Active Development</div>
+            <p class="project-summary">
+              Engineering a real-time Visual SLAM system implementing visual odometry, camera pose tracking, 
+              and 3D spatial reconstruction to enable autonomous spatial localization without relying on external GPS.
+            </p>
+            <div class="project-highlights">
+              <div>• Real-time feature extraction &amp; sequential camera trajectory estimation</div>
+              <div>• Sparse 3D point cloud map generation with bundle adjustment &amp; loop-closure detection</div>
+            </div>
+            <div class="project-stack">
+              <span>Python</span>
+              <span>PyTorch</span>
+              <span>OpenCV</span>
+              <span>Visual SLAM</span>
+              <span>Spatial AI</span>
+              <span>3D Mapping</span>
+            </div>
+            <button class="btn-text project-modal-btn" data-target="modal-vslam">View Details &rarr;</button>
           </div>
         </div>
       </div>
