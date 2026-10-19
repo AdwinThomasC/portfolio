@@ -1460,6 +1460,39 @@ button, input, textarea {
   border-color: var(--text-muted);
 }
 
+.project-featured-rd {
+  grid-column: span 2;
+  border-color: rgba(56, 189, 248, 0.35);
+  background: linear-gradient(180deg, var(--bg-card) 0%, rgba(56, 189, 248, 0.035) 100%);
+  position: relative;
+}
+
+.project-featured-rd:hover {
+  border-color: var(--accent);
+  box-shadow: 0 4px 18px rgba(56, 189, 248, 0.12);
+}
+
+.project-badge-active {
+  background-color: rgba(56, 189, 248, 0.15);
+  color: var(--accent);
+  padding: 3px 10px;
+  border-radius: var(--radius-xs);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.project-badge-active::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--accent);
+  box-shadow: 0 0 6px var(--accent);
+}
+
 .project-box-header {
   display: flex;
   justify-content: space-between;
@@ -2015,6 +2048,10 @@ button, input, textarea {
 
   .bento-works-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .project-featured-rd {
+    grid-column: span 1;
   }
 }
 
