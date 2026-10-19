@@ -402,7 +402,8 @@ button, input, textarea {
    3. Hero Section (Realistic & Grounded)
    -------------------------------------------------- */
 .hero-section {
-  padding: 64px 0 40px;
+  padding: 64px 0 56px;
+  position: relative;
 }
 
 .hero-layout {
@@ -1086,22 +1087,83 @@ button, input, textarea {
    5. Section Architecture & Typography
    -------------------------------------------------- */
 .section {
-  padding: 72px 0;
+  padding: 56px 0;
+  position: relative;
+  transition: background-color var(--trans-normal);
 }
 
+/* Subtle ambient depth alternation across sections */
+[data-theme="dark"] .section:nth-of-type(even) {
+  background: radial-gradient(ellipse 90% 50% at 50% 0%, rgba(56, 189, 248, 0.035), transparent 75%);
+}
+
+[data-theme="light"] .section:nth-of-type(even) {
+  background: radial-gradient(ellipse 90% 50% at 50% 0%, rgba(2, 132, 199, 0.02), transparent 75%);
+}
+
+/* Luminous Tech Divider between sections */
 .section-bordered {
-  border-bottom: 1px solid var(--border-color);
+  position: relative;
+}
+
+.section-bordered::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(92%, 1100px);
+  height: 1px;
+  background: linear-gradient(
+    90deg, 
+    transparent 0%, 
+    var(--border-color) 20%, 
+    rgba(56, 189, 248, 0.5) 50%, 
+    var(--border-color) 80%, 
+    transparent 100%
+  );
+  pointer-events: none;
+}
+
+/* Glowing center accent node on the divider line */
+.section-bordered::before {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 7px;
+  height: 7px;
+  background-color: var(--accent);
+  border-radius: 50%;
+  box-shadow: 0 0 10px var(--accent), 0 0 3px rgba(255, 255, 255, 0.9);
+  z-index: 2;
+  pointer-events: none;
 }
 
 .section-title-wrap {
-  margin-bottom: 36px;
+  margin-bottom: 30px;
+  position: relative;
 }
 
 .section-heading {
   font-size: 1.75rem;
   font-weight: 700;
   letter-spacing: -0.02em;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
+  color: var(--text-main);
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.section-heading::before {
+  content: '';
+  display: inline-block;
+  width: 4px;
+  height: 22px;
+  background: linear-gradient(180deg, var(--accent) 0%, transparent 100%);
+  border-radius: var(--radius-full);
 }
 
 .section-tagline {
@@ -1862,10 +1924,28 @@ button, input, textarea {
    15. Footer
    -------------------------------------------------- */
 .site-footer {
-  border-top: 1px solid var(--border-color);
-  padding: 36px 0;
+  position: relative;
+  padding: 40px 0;
   font-size: 0.85rem;
   color: var(--text-muted);
+}
+
+.site-footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(92%, 1100px);
+  height: 1px;
+  background: linear-gradient(
+    90deg, 
+    transparent 0%, 
+    var(--border-color) 20%, 
+    rgba(56, 189, 248, 0.4) 50%, 
+    var(--border-color) 80%, 
+    transparent 100%
+  );
 }
 
 .footer-content {
