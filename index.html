@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adwin Thomas C — Data Scientist &amp; ML Engineer</title>
+  <meta name="description" content="Portfolio of Adwin Thomas C, a Data Scientist based in Bangalore with experience in data pipelines, machine learning, and real-time operational systems.">
+  <meta name="keywords" content="Adwin Thomas C, Data Scientist, Machine Learning, Python, SQL, PyTorch, Data Engineering, AWS, Bangalore">
+  <meta name="author" content="Adwin Thomas C">
+   <!-- Profile Photo Favicon (from DSC_2155.JPG) -->
+  <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAALhklEQVR4nI1Xa2wc13X+7mMeO/ve5WNJRg9KoijrETmhDDe2BcEuYjmIICRBqRZFDTQK6rZpAzQp8qMWCpktnPZfguSX/aMJUNRBrT+GYrg2jDh2bceNbVm0JVsPUhQpkStyuY/Z2d2ZnZn7KGYlB4Frt53FHexg7tzvO+fec853CD77Is8+O0tPnDgjk4d/ferxsbGxXcfTGeuhULi7rq+8e8CxK8bo8DQAHRfyhQsm54uNzuory2tXzj766I9uJd89++wsO3HijEomfSoIPuU6ffo0nZubSz7Cz57+9r5idst3NMgxnu5OUMuD32bYqLbgpAqYqOyBZdlQMoZtWRA6wHrr2loo3efdzspP/vqxlz785Jr/K4HZ2Vl25swZ+dhjM8a+qd2n8vltjw/lP2e0OnV0yLwqZMaAII+2u0kZLcEwHBgGh4hDJWWMfKEAbhCq4aMb1GKhOz94661/e/LppxHf8Yb8TAKzd8B/9A/fn7JN+VNkSvdTaxJt1xP1Vod5XpNs/9w2FHMptFsL4NQHZRE4IwBhsFMpGJyDEKoN05KGQblpefC63puh6H3z5MmfLXySBPmk2//yTx+5Z8vw2Iu50emSq0aE12oy3w+IUAqOyaA00HC7UDJEuZBGOgOU7A52b8uB2ynEmsLvR7AsC4QQHYV9adod3g3Wms1a85G/+f6L72h9mhJyezvI74I/8MDUju0jQ+9u376/aI7MiHqtyRcXLyMWCrlcFnmHY3V1DU6xAqEkatVV2E4B7cZN/PFX9+Erv383moFEu9eHFDG01hBxBKGqQusWj6PhVtDLHPr29/556WMS9DaJOcw8NmNY2nhGSl3U1oj0vIA361WknRQKxSIMy4E2CyDcRt/vYn3lKnx3DevX30OrvopfvPwOghDIZbLg3ABnBpQUEEJAyTInOiPzuaBop/kzTz31lJEYrrUm9MiRI2xuDqpyTZwyDXZvPybC7yu2tnoDjZYLpSZSdotdFwmH59pQMoZtWRA6wHrr2loo3efdzspP/vqxlz785Jr/K4HZ2Vl25swZ+dhjM8a+qd2n8vltjw/lP2e0OnV0yLwqZMaAII+2u0kZLcEwHBgGh4hDJWWMfKEAbhCq4aMb1GKhOz94661/e/LppxHf8Yb8TAKzd8B/9A/fn7JN+VNkSvdTaxJt1xP1Vod5XpNs/9w2FHMptFsL4NQHZRE4IwBhsFMpGJyDEKoN05KGQblpefC63puh6H3z5MmfLXySBPmk2//yTx+5Z8vw2Iu50emSq0aE12oy3w+IUAqOyaA00HC7UDJEuZBGOgOU7A52b8uB2ynEmsLvR7AsC4QQHYV9adod3g3Wms1a85G/+f6L72h9mhJyezvI74I/8MDUju0jQ+9u376/aI7MiHqtyRcXLyMWCrlcFnmHY3V1DU6xAqEkatVV2E4B7cZN/PFX9+Erv383moFEu9eHFDG01hBxBKGqQusWj6PhVtDLHPr29/556WMS9DaJOcw8NmNY2nhGSl3U1oj0vIA361WknRQKxSIMy4E2CyDcRt/vYn3lKnx3DevX30OrvopfvPwOghDIZbLg3ABnBpQUEEJAyTInOiPzuaBop/kzTz31lJEYrrUm9MiRI2xuDqpyTZwyDXZvPybC7yu2tnoDjZYLpSZSdotdtwnHsmBwE0IIJGEwLQeWZUOICGknhUqlgnq9DsdxEIcRhBAQOoQQCgwZMMbAcVvO4wSgUqmg2WhgeGIIw8PDyGQy2L9/P4IgANPqH5d7/v/A7373OzcIAgRB4P5nAMYYWq0Wms0mksnkrw1g27Z77Nix+P8B+q+kL87+6FwAAAAASUVORK5CYII=">
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/profile_favicon.png?v=7">
+  <link rel="shortcut icon" href="favicon.ico?v=7">
+
+  <!-- Clean, Legible Tech Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Site Navigation -->
+  <header class="site-header" id="header">
+    <div class="header-inner container">
+      <a href="#hero" class="brand-logo" aria-label="Adwin Thomas C">
+        <div class="logo-meta">
+          <span class="brand-name">Adwin Thomas C</span>
+          <span class="brand-role">Data Scientist</span>
+        </div>
+      </a>
+
+      <!-- Desktop Links -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#summary" class="nav-link">Summary</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#publication" class="nav-link">Publication</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#references" class="nav-link">References</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <!-- Theme Toggle -->
+        <button id="themeToggle" class="btn-icon-subtle" aria-label="Toggle theme" title="Toggle theme">
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+
+        <!-- Direct Resume Download -->
+        <a href="Adwin_Resume_Updated.pdf" target="_blank" download="Adwin_Thomas_C_Resume.pdf" class="btn btn-outline btn-sm">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-svg"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          <span>Resume</span>
+        </a>
+
+        <!-- Mobile Menu Toggle -->
+        <button id="mobileMenuBtn" class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-drawer" id="mobileDrawer">
+      <ul class="mobile-nav-links">
+        <li><a href="#summary" class="mobile-nav-link">Summary</a></li>
+        <li><a href="#skills" class="mobile-nav-link">Technical Skills</a></li>
+        <li><a href="#experience" class="mobile-nav-link">Professional Experience</a></li>
+        <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+        <li><a href="#publication" class="mobile-nav-link">Publication</a></li>
+        <li><a href="#education" class="mobile-nav-link">Education &amp; Certifications</a></li>
+        <li><a href="#references" class="mobile-nav-link">References</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+      </ul>
+      <div class="mobile-drawer-cta">
+        <a href="Adwin_Resume_Updated.pdf" target="_blank" download="Adwin_Thomas_C_Resume.pdf" class="btn btn-primary btn-block">Download Resume</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-layout">
+        <!-- Left Column: Realistic Intro -->
+        <div class="hero-bio">
+          <div class="hero-avatar-row">
+            <div class="avatar-container">
+              <img src="assets/profile.jpg" alt="Adwin Thomas C - Data Scientist" class="hero-profile-img">
+              <span class="avatar-online-dot" title="Available for opportunities"></span>
+            </div>
+            <div class="status-indicator">
+              <span class="status-dot"></span>
+              <span>Available for Data Scientist &amp; ML Engineer roles</span>
+            </div>
+          </div>
+
+          <h1 class="hero-heading">
+            Hi, I’m Adwin Thomas C.
+            <span class="hero-subtext">Data Scientist building data pipelines, machine learning models, and real-time operational systems.</span>
+          </h1>
+
+          <p class="hero-description">
+            Based in Bangalore. Experienced in Python, SQL, statistical analysis, and applied ML. 
+            Currently at St. John's Research Institute, consolidating multi-source datasets, deploying live operational 
+            tracking platforms, and validating predictive tools.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#experience" class="btn btn-primary">
+              <span>View Experience</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-svg"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="#projects" class="btn btn-secondary">Featured Projects</a>
+            <a href="https://github.com/AdwinThomasC" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-icon-only" title="GitHub Profile">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"></path></svg>
+            </a>
+            <a href="https://linkedin.com/in/adwinthomasc" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-icon-only" title="LinkedIn Profile">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.64 1.64 0 1 0 0-3.28 1.64 1.64 0 0 0 0 3.28m1.39 10.24V10.63H5.07v8.37h2.78z"></path></svg>
+            </a>
+          </div>
+
+          <div class="hero-contact-inline">
+            <span class="meta-item">📍 Bangalore, India</span>
+            <span class="meta-sep">•</span>
+            <a href="mailto:adwinthomas2002@gmail.com" class="meta-link">adwinthomas2002@gmail.com</a>
+          </div>
+        </div>
+
+        <!-- Right Column: Realistic Developer Terminal Card -->
+        <div class="hero-terminal-wrap">
+          <div class="terminal-card">
+            <div class="terminal-bar">
+              <div class="terminal-controls">
+                <span class="dot close"></span>
+                <span class="dot minimize"></span>
+                <span class="dot expand"></span>
+              </div>
+              <div class="terminal-title">adwin_profile.py — zsh</div>
+              <div class="terminal-branch">git:(main)</div>
+            </div>
+            <div class="terminal-body">
+              <pre><code><span class="c-comment"># Quick developer overview</span>
+<span class="c-keyword">class</span> <span class="c-class">DataScientist</span>:
+    <span class="c-keyword">def</span> <span class="c-func">__init__</span>(self):
+        self.name = <span class="c-string">"Adwin Thomas C"</span>
+        self.location = <span class="c-string">"Bangalore, Karnataka, India"</span>
+        self.education = <span class="c-string">"M.Sc. Data Science (First Class)"</span>
+        
+        self.core_stack = [
+            <span class="c-string">"Python"</span>, <span class="c-string">"SQL"</span>, <span class="c-string">"R"</span>, 
+            <span class="c-string">"Plotly Dash"</span>, <span class="c-string">"Power BI"</span>, <span class="c-string">"MySQL"</span>,
+            <span class="c-string">"PyTorch / YOLOv7"</span>, <span class="c-string">"AWS"</span>
+        ]
+        
+    <span class="c-keyword">def</span> <span class="c-func">current_focus</span>(self):
+        <span class="c-keyword">return</span> {
+            <span class="c-string">"pipelines"</span>: <span class="c-string">"Automated ETL &amp; validation"</span>,
+            <span class="c-string">"operations"</span>: <span class="c-string">"Live tracking across 24 units"</span>,
+            <span class="c-string">"scale"</span>: <span class="c-string">"50K+ records, 40+ field sites"</span>
+        }
+
+<span class="c-comment"># Output</span>
+&gt;&gt;&gt; profile = DataScientist()
+&gt;&gt;&gt; <span class="c-func">print</span>(profile.current_focus())
+<span class="c-output">{ 'status': 'Ready for opportunities in Data Science &amp; ML' }</span></code></pre>
+            </div>
+            <div class="terminal-footer">
+              <div class="terminal-stat">
+                <span class="stat-dot green"></span>
+                <span>Active Production System</span>
+              </div>
+              <span class="terminal-lang">Python 3.11</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- KEY METRICS BANNER (Real, grounded figures from resume) -->
+      <div class="container metrics-banner-wrap">
+        <div class="metrics-grid">
+          <div class="metric-block">
+            <div class="metric-value"><span class="counter" data-target="1.10">0</span><span class="metric-unit"> Cr</span></div>
+            <div class="metric-label">INR Project Grant Contributed</div>
+            <div class="metric-sub">Scaling deployment in Koppal district</div>
+          </div>
+          <div class="metric-block">
+            <div class="metric-value"><span class="counter" data-target="5000">0</span><span class="metric-unit">+</span></div>
+            <div class="metric-label">Data Records Ingested</div>
+            <div class="metric-sub">Consolidated &amp; validation pipelines</div>
+          </div>
+          <div class="metric-block">
+            <div class="metric-value"><span class="counter" data-target="40">0</span><span class="metric-unit">+</span></div>
+            <div class="metric-label">Deployment Sites Monitored</div>
+            <div class="metric-sub">End-to-end digital tracking system</div>
+          </div>
+          <div class="metric-block">
+            <div class="metric-value"><span class="counter" data-target="24">0</span><span class="metric-unit"> Units</span></div>
+            <div class="metric-label">Live Monitored Operations</div>
+            <div class="metric-sub">Real-time consolidated tracking</div>
+          </div>
+          <div class="metric-block">
+            <div class="metric-value"><span class="counter" data-target="50000">0</span><span class="metric-unit">+</span></div>
+            <div class="metric-label">Transactional Records Analyzed</div>
+            <div class="metric-sub">Demand &amp; operations analysis</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 1: PROFESSIONAL SUMMARY -->
+    <section class="section section-bordered" id="summary">
+      <div class="container">
+        <div class="section-title-wrap">
+          <h2 class="section-heading">Professional Summary</h2>
+          <p class="section-tagline">Background in data pipelines, analytics, and applied machine learning</p>
+        </div>
+
+        <div class="summary-box">
+          <p class="summary-paragraph">
+            Data Scientist with practical experience building <strong>data pipelines</strong>, 
+            <strong>digital monitoring systems</strong>, and <strong>decision-support analytics</strong> across operational 
+            and research environments. Skilled in Python, SQL, statistical analysis, data validation, dashboard development, 
+            and applied machine learning.
+          </p>
+          <p class="summary-paragraph">
+            Experienced in translating complex operational and structured datasets into clean, analysis-ready schemas and actionable 
+            metrics for programme managers, technical leads, and institutional leadership.
+          </p>
+
+          <div class="summary-focus-grid">
+            <div class="focus-item">
+              <div class="focus-title">Data Pipelines &amp; ETL</div>
+              <p>Designing automated data ingestion, validation checks, and data preparation workflows to eliminate manual reporting bottlenecks.</p>
+            </div>
+            <div class="focus-item">
+              <div class="focus-title">Machine Learning &amp; CV</div>
+              <p>Developing supervised learning models, classification pipelines, object detection (YOLOv7), and statistical validation.</p>
+            </div>
+            <div class="focus-item">
+              <div class="focus-title">Real-Time Operational Systems</div>
+              <p>Building interactive dashboards with Plotly Dash and Power BI that replace disconnected records with consolidated live visibility.</p>
+            </div>
+            <div class="focus-item">
+              <div class="focus-title">Database Storage &amp; RBAC</div>
+              <p>Structuring relational databases (MySQL) with role-based access control, query optimization, and secure data sharing.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: TECHNICAL SKILLS -->
+    <section class="section section-bordered" id="skills">
+      <div class="container">
+        <div class="section-title-wrap">
+          <h2 class="section-heading">Technical Skills</h2>
+          <p class="section-tagline">Tools, frameworks, and core methodologies</p>
+        </div>
+
+        <!-- Filter & Search Controls -->
+        <div class="skills-filter-row">
+          <div class="skills-tabs" id="skillTabs">
+            <button class="skill-tab-btn active" data-filter="all">All</button>
+            <button class="skill-tab-btn" data-filter="prog">Programming</button>
+            <button class="skill-tab-btn" data-filter="ds">Data Science</button>
+            <button class="skill-tab-btn" data-filter="ml">Machine Learning</button>
+            <button class="skill-tab-btn" data-filter="viz">Visualization</button>
+            <button class="skill-tab-btn" data-filter="db">Databases &amp; Cloud</button>
+            <button class="skill-tab-btn" data-filter="tools">Tools</button>
+          </div>
+          <div class="skill-search-wrapper">
+            <input type="text" id="skillSearchInput" placeholder="Filter skill (e.g. Python, SQL, Dash, AWS)..." aria-label="Search skills">
+          </div>
+        </div>
+
+        <!-- Skills Grid directly from resume headers -->
+        <div class="skills-card-grid" id="skillsGrid">
+          <!-- Programming -->
+          <div class="skill-group-card" data-category="prog">
+            <div class="group-header">
+              <span class="group-title">Programming</span>
+              <span class="group-count">3 languages</span>
+            </div>
+            <div class="skill-pills">
+              <span class="pill primary">Python</span>
+              <span class="pill primary">SQL</span>
+              <span class="pill">R</span>
+            </div>
+          </div>
+
+          <!-- Data Science -->
+          <div class="skill-group-card" data-category="ds">
+            <div class="group-header">
+              <span class="group-title">Data Science</span>
+              <span class="group-count">5 areas</span>
+            </div>
+            <div class="skill-pills">
+              <span class="pill primary">Data Cleaning</span>
+              <span class="pill primary">Exploratory Data Analysis (EDA)</span>
+              <span class="pill">Feature Engineering</span>
+              <span class="pill primary">Statistical Analysis</span>
+              <span class="pill">Data Validation</span>
+            </div>
+          </div>
+
+          <!-- Machine Learning -->
+          <div class="skill-group-card" data-category="ml">
+            <div class="group-header">
+              <span class="group-title">Machine Learning</span>
+              <span class="group-count">4 domains</span>
+            </div>
+            <div class="skill-pills">
+              <span class="pill primary">Supervised Learning</span>
+              <span class="pill">Classification</span>
+              <span class="pill primary">Medical Imaging Analysis</span>
+              <span class="pill">YOLOv7 / Computer Vision</span>
+            </div>
+          </div>
+
+          <!-- Visualization -->
+          <div class="skill-group-card" data-category="viz">
+            <div class="group-header">
+              <span class="group-title">Visualization</span>
+              <span class="group-count">3 tools</span>
+            </div>
+            <div class="skill-pills">
+              <span class="pill primary">Plotly Dash</span>
+              <span class="pill primary">Power BI</span>
+              <span class="pill">Microsoft Excel</span>
+            </div>
+          </div>
+
+          <!-- Databases -->
+          <div class="skill-group-card" data-category="db">
+            <div class="group-header">
+              <span class="group-title">Databases &amp; Cloud</span>
+              <span class="group-count">4 technologies</span>
+            </div>
+            <div class="skill-pills">
+              <span class="pill primary">MySQL</span>
+              <span class="pill">Relational Data Storage</span>
+              <span class="pill primary">Data Ingestion</span>
+              <span class="pill primary">Amazon Web Services (AWS)</span>
+            </div>
+          </div>
+
+          <!-- Tools -->
+          <div class="skill-group-card" data-category="tools">
+            <div class="group-header">
+              <span class="group-title">Tools &amp; Environment</span>
+              <span class="group-count">4 tools</span>
+            </div>
+            <div class="skill-pills">
+              <span class="pill primary">Git</span>
+              <span class="pill primary">GitHub</span>
+              <span class="pill">Jupyter Notebook</span>
+              <span class="pill">Visual Studio Code</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: PROFESSIONAL EXPERIENCE -->
+    <section class="section section-bordered" id="experience">
+      <div class="container">
+        <div class="section-title-wrap">
+          <h2 class="section-heading">Professional Experience</h2>
+          <p class="section-tagline">Roles, engineering responsibilities, and quantified impact</p>
+        </div>
+
+        <div class="experience-list">
+          <!-- Role 1: Senior Project Associate -->
+          <article class="job-item current">
+            <div class="job-header">
+              <div class="job-info">
+                <div class="job-title-row">
+                  <h3 class="job-title">Senior Project Associate</h3>
+                  <span class="badge-role">Present</span>
+                </div>
+                <div class="job-company">St. John’s Research Institute (SJRI), Bangalore</div>
+              </div>
+              <div class="job-date">May 2025 – Present</div>
+            </div>
+
+            <ul class="job-bullets">
+              <li>
+                <strong>Data Consolidation &amp; Pipeline Architecture:</strong> Consolidated records and hospital information system data for <strong>5,000+ entities</strong> into analysis-ready datasets, improving data reliability for reporting and validation of pre-existing AI tools under the <em>ICMR CAR MEDTECH programme</em>.
+              </li>
+              <li>
+                <strong>Large-Scale Digital Tracking:</strong> Designed and implemented an end-to-end Test–Treat–Track monitoring system for the <em>ICMR PRAKASH project</em>, digitising screening, treatment initiation, and follow-up workflows while tracking data completeness and operational KPIs across <strong>40+ deployment locations</strong>.
+              </li>
+              <li>
+                <strong>Automated KPI Reporting:</strong> Provided programme managers, the District Health Officer, and institutional leadership with near-real-time visibility into screening progress, treatment initiation, follow-up status, data gaps, coverage issues, and operational bottlenecks by replacing disconnected manual reporting workflows with automated KPI tracking.
+              </li>
+              <li>
+                <strong>District-Wide Stakeholder Approval:</strong> Secured District Health Officer approval for district-wide implementation in Koppal, Karnataka, and led the launch of active field data collection at the first deployment site.
+              </li>
+              <li>
+                <strong>Grant Funding Contribution:</strong> Contributed to securing an <strong>INR 1.10 crore ICMR grant</strong> supporting implementation and scale-up of the system in Koppal district.
+              </li>
+              <li>
+                <strong>Real-Time Operations Tracking:</strong> Developed a centralized system for St. John’s Medical College and Hospital providing a <strong>real-time, consolidated view of operations in progress across 24 units</strong>, replacing fragmented ward-level tracking and currently in active production use.
+              </li>
+              <li>
+                <strong>Capacity Monitoring:</strong> Built a bed occupancy monitoring system to track real-time bed availability by ward and department, providing staff and administrators with visibility to support operational planning.
+              </li>
+            </ul>
+
+            <div class="job-tech-footer">
+              <span class="tag-tech">Python</span>
+              <span class="tag-tech">SQL</span>
+              <span class="tag-tech">Plotly Dash</span>
+              <span class="tag-tech">Data Pipelines</span>
+              <span class="tag-tech">ETL Validation</span>
+              <span class="tag-tech">Real-Time Dashboards</span>
+            </div>
+          </article>
+
+          <!-- Role 2: Data Science Research Intern -->
+          <article class="job-item">
+            <div class="job-header">
+              <div class="job-info">
+                <div class="job-title-row">
+                  <h3 class="job-title">Data Science Research Intern</h3>
+                </div>
+                <div class="job-company">St. John’s Research Institute (SJRI), Bangalore</div>
+              </div>
+              <div class="job-date">January 2025 – May 2025</div>
+            </div>
+
+            <ul class="job-bullets">
+              <li>
+                <strong>Low-Connectivity Application:</strong> Built a web-based and offline detection system for field teams operating in low-connectivity environments, enabling standardised data capture and centralized analysis.
+              </li>
+              <li>
+                <strong>Secure Relational Data Repository:</strong> Designed and operationalized a secure, queryable clinical data repository with role-based access controls (RBAC), improving dataset organization, filtering, reuse, and accessibility for clinicians and research teams.
+              </li>
+              <li>
+                <strong>Automated ETL Pipelines:</strong> Automated data ingestion and validation workflows for structured healthcare datasets, improving data availability and enabling near-real-time analytics for ongoing implementation studies.
+              </li>
+            </ul>
+
+            <div class="job-tech-footer">
+              <span class="tag-tech">Python</span>
+              <span class="tag-tech">MySQL</span>
+              <span class="tag-tech">RBAC Security</span>
+              <span class="tag-tech">Offline-First Data</span>
+              <span class="tag-tech">ETL Automation</span>
+            </div>
+          </article>
+
+          <!-- Role 3: Data Analyst Intern -->
+          <article class="job-item">
+            <div class="job-header">
+              <div class="job-info">
+                <div class="job-title-row">
+                  <h3 class="job-title">Data Analyst Intern</h3>
+                </div>
+                <div class="job-company">Yoshops.com</div>
+              </div>
+              <div class="job-date">December 2022 – February 2023</div>
+            </div>
+
+            <ul class="job-bullets">
+              <li>
+                <strong>BI Dashboard Engineering:</strong> Developed Power BI dashboards for business and operations teams to monitor sales performance, inventory movement, revenue trends, and operational KPIs.
+              </li>
+              <li>
+                <strong>Large-Scale Transactional Analysis:</strong> Analyzed <strong>50,000+ transactional records</strong> to identify demand patterns and operational inefficiencies, informing pricing adjustments and inventory planning strategies.
+              </li>
+            </ul>
+
+            <div class="job-tech-footer">
+              <span class="tag-tech">Power BI</span>
+              <span class="tag-tech">50K+ Records</span>
+              <span class="tag-tech">Excel</span>
+              <span class="tag-tech">Operational Analytics</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: PROJECTS -->
+    <section class="section section-bordered" id="projects">
+      <div class="container">
+        <div class="section-title-wrap">
+          <h2 class="section-heading">Projects</h2>
+          <p class="section-tagline">Software systems, deep learning pipelines, and data architectures</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: Real-Time Operations Tracker -->
+          <div class="project-box">
+            <div class="project-box-header">
+              <span class="project-type">Production System</span>
+              <span class="project-id">01</span>
+            </div>
+            <h3 class="project-name">Real-Time Operations &amp; Resource Management System</h3>
+            <div class="project-context">St. John’s Medical College &amp; Hospital</div>
+            <p class="project-summary">
+              Centralized monitoring system providing a consolidated real-time view of ongoing operations across 
+              <strong>24 live units</strong> and department-level bed occupancy, replacing fragmented manual logs.
+            </p>
+            <div class="project-highlights">
+              <div>• Live tracking across 24 units in active production use</div>
+              <div>• Ward-level capacity tracking to streamline operational planning</div>
+            </div>
+            <div class="project-stack">
+              <span>Python</span>
+              <span>SQL</span>
+              <span>Plotly Dash</span>
+              <span>Data Pipelines</span>
+            </div>
+            <button class="btn-text project-modal-btn" data-target="modal-hospital">View Details &rarr;</button>
+          </div>
+
+          <!-- Project 2: YOLOv7 Object Detection -->
+          <div class="project-box">
+            <div class="project-box-header">
+              <span class="project-type">Computer Vision</span>
+              <span class="project-id">02</span>
+            </div>
+            <h3 class="project-name">Object Detection Using Deep Learning (YOLOv7)</h3>
+            <div class="project-context">Validated Prototype Stage</div>
+            <p class="project-summary">
+              Built and evaluated a multi-class object detection pipeline using YOLOv7, covering dataset preparation, 
+              model training, validation, and real-time inference.
+            </p>
+            <div class="project-highlights">
+              <div>• Multi-class bounding-box model training &amp; hyperparameter tuning</div>
+              <div>• Validated prototype pipeline with real-time inference evaluation</div>
+            </div>
+            <div class="project-stack">
+              <span>Python</span>
+              <span>YOLOv7</span>
+              <span>PyTorch</span>
+              <span>OpenCV</span>
+            </div>
+            <button class="btn-text project-modal-btn" data-target="modal-yolo">View Details &rarr;</button>
+          </div>
+
+          <!-- Project 3: Breast Cancer Data Repository -->
+          <div class="project-box">
+            <div class="project-box-header">
+              <span class="project-type">Data Architecture</span>
+              <span class="project-id">03</span>
+            </div>
+            <h3 class="project-name">Breast Cancer Clinical Data Repository</h3>
+            <div class="project-context">Division of Molecular Medicine, SJRI</div>
+            <p class="project-summary">
+              Implemented a secure, queryable clinical data repository enabling structured storage, filtering, 
+              retrieval, and reuse of complex clinical datasets.
+            </p>
+            <div class="project-highlights">
+              <div>• Role-based access controls (RBAC) to protect sensitive data</div>
+              <div>• Relational schema with sub-second query filtering</div>
+            </div>
+            <div class="project-stack">
+              <span>Python</span>
+              <span>MySQL</span>
+              <span>Data Ingestion</span>
+              <span>Validation</span>
+            </div>
+            <button class="btn-text project-modal-btn" data-target="modal-cancer">View Details &rarr;</button>
+          </div>
+
+          <!-- Project 4: IoT-Based Temperature Monitoring -->
+          <div class="project-box">
+            <div class="project-box-header">
+              <span class="project-type">IoT &amp; Telemetry</span>
+              <span class="project-id">04</span>
+            </div>
+            <h3 class="project-name">IoT-Based Temperature Monitoring System</h3>
+            <div class="project-context">Telemetry &amp; Automated Alerting</div>
+            <p class="project-summary">
+              Developed an end-to-end IoT data workflow to collect, store, and visualize time-series temperature data, 
+              with threshold-based alerts for timely corrective action.
+            </p>
+            <div class="project-highlights">
+              <div>• Time-series ingestion with localized caching</div>
+              <div>• Threshold-triggered alerting workflow for rapid response</div>
+            </div>
+            <div class="project-stack">
+              <span>Python</span>
+              <span>Time-Series Storage</span>
+              <span>IoT Protocols</span>
+              <span>Dashboards</span>
+            </div>
+            <button class="btn-text project-modal-btn" data-target="modal-iot">View Details &rarr;</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: PUBLICATION -->
+    <section class="section section-bordered" id="publication">
+      <div class="container">
+        <div class="section-title-wrap">
+          <h2 class="section-heading">Publication</h2>
+          <p class="section-tagline">Peer-reviewed research and applied AI evaluation</p>
+        </div>
+
+        <div class="pub-card-simple">
+          <div class="pub-status-line">
+            <span class="badge-subtle yellow">Manuscript under peer review</span>
+            <span class="badge-subtle blue">Second Author</span>
+          </div>
+
+          <h3 class="pub-paper-title">
+            “Performance and implementation considerations of an AI-based chest radiography tool for tuberculosis screening in a high-burden tertiary care setting in India.”
+          </h3>
+
+          <div class="pub-venue">
+            <strong>The Lancet Regional Health – Southeast Asia</strong>
+          </div>
+
+          <p class="pub-summary">
+            Evaluated diagnostic performance of an AI tool for chest radiography in a high-burden tertiary setting, 
+            analyzing sensitivity, specificity, workflow integration, and operational feasibility.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: EDUCATION & CERTIFICATIONS -->
+    <section class="section section-bordered" id="education">
+      <div class="container">
+        <div class="section-title-wrap">
+          <h2 class="section-heading">Education &amp; Certifications</h2>
+          <p class="section-tagline">Academic degrees and certified credentials</p>
+        </div>
+
+        <div class="edu-grid">
+          <!-- Degrees -->
+          <div class="edu-block">
+            <h3 class="sub-heading">Education</h3>
+
+            <div class="edu-card-simple">
+              <div class="edu-top">
+                <span class="edu-degree">Master of Science (M.Sc.) in Data Science</span>
+                <span class="edu-grade">First Class</span>
+              </div>
+              <div class="edu-place">Christ University, Bangalore</div>
+              <div class="edu-dates">July 2023 – April 2025</div>
+            </div>
+
+            <div class="edu-card-simple">
+              <div class="edu-top">
+                <span class="edu-degree">Bachelor of Vocation (B.Voc.) in Data Science</span>
+                <span class="edu-grade">First Class with Distinction</span>
+              </div>
+              <div class="edu-place">St. Thomas College (Autonomous), Thrissur, Kerala</div>
+              <div class="edu-dates">July 2020 – May 2023</div>
+            </div>
+          </div>
+
+          <!-- Certifications & Grants -->
+          <div class="edu-block">
+            <h3 class="sub-heading">Certifications &amp; Grants</h3>
+
+            <div class="cert-item-simple">
+              <div class="cert-title">Introduction to Big Data</div>
+              <div class="cert-sub">University of California, San Diego (Coursera)</div>
+              <p class="cert-detail">Distributed data frameworks, NoSQL storage, and scalable data ingestion.</p>
+            </div>
+
+            <div class="cert-item-simple">
+              <div class="cert-title">Introduction to Large Language Models</div>
+              <div class="cert-sub">LinkedIn Learning</div>
+              <p class="cert-detail">Transformer architectures, prompt engineering, and foundational model concepts.</p>
+            </div>
+
+            <div class="grant-item-simple">
+              <div class="cert-title">ICMR Grant Scale-Up (INR 1.10 Crore)</div>
+              <div class="cert-sub">St. John's Research Institute / ICMR</div>
+              <p class="cert-detail">Contributed to securing grant funding supporting implementation of the Test–Treat–Track system in Koppal district.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: REFERENCES -->
+    <section class="section section-bordered" id="references">
+      <div class="container">
+        <div class="section-title-wrap">
+          <h2 class="section-heading">References</h2>
+          <p class="section-tagline">Advisors and research leadership at St. John's Research Institute</p>
+        </div>
+
+        <div class="refs-grid">
+          <div class="ref-card-simple">
+            <div class="ref-name">Dr. Prashanth Thankachan</div>
+            <div class="ref-position">Professor, Division of Nutrition</div>
+            <div class="ref-institution">St. John’s Research Institute, Bangalore</div>
+            <div class="ref-note">Directing faculty on large-scale field studies, data workflows, and the ICMR PRAKASH project.</div>
+          </div>
+
+          <div class="ref-card-simple">
+            <div class="ref-name">Dr. Sumithra Selvam</div>
+            <div class="ref-position">Associate Professor, Division of Epidemiology, Biostatistics and Population Health</div>
+            <div class="ref-institution">St. John’s Research Institute, Bangalore</div>
+            <div class="ref-note">Collaborating mentor in statistical data validation, study methodology, and clinical AI implementation.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 8: CONTACT -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-title-wrap">
+          <h2 class="section-heading">Get in Touch</h2>
+          <p class="section-tagline">Available for Data Scientist, Machine Learning, and Analytics opportunities</p>
+        </div>
+
+        <div class="contact-box-centered">
+          <p class="contact-intro">
+            Whether you are recruiting for a Data Scientist role, discussing data pipelines and machine learning architecture, 
+            or exploring collaboration, feel free to reach out directly via email.
+          </p>
+
+          <!-- Primary Direct Email Action Card -->
+          <div class="primary-email-card">
+            <div class="email-card-left">
+              <div class="email-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <div class="email-details">
+                <span class="email-label">Direct Email</span>
+                <a href="mailto:adwinthomas2002@gmail.com" class="email-link" title="Click to compose email in your email app">adwinthomas2002@gmail.com</a>
+              </div>
+            </div>
+            <div class="email-card-actions">
+              <a href="mailto:adwinthomas2002@gmail.com" class="btn btn-primary btn-sm">
+                <span>Compose Mail</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-svg"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              </a>
+              <button class="copy-btn" data-copy="adwinthomas2002@gmail.com" title="Copy email address to clipboard">Copy</button>
+            </div>
+          </div>
+
+          <!-- Secondary Links (Location, LinkedIn, GitHub) -->
+          <div class="contact-meta-grid">
+            <div class="meta-card">
+              <span class="meta-label">Location</span>
+              <span class="meta-val">📍 Bangalore, Karnataka, India</span>
+            </div>
+            <a href="https://linkedin.com/in/adwinthomasc" target="_blank" rel="noopener noreferrer" class="meta-card linkable">
+              <span class="meta-label">LinkedIn</span>
+              <span class="meta-val">linkedin.com/in/adwinthomasc &rarr;</span>
+            </a>
+            <a href="https://github.com/AdwinThomasC" target="_blank" rel="noopener noreferrer" class="meta-card linkable">
+              <span class="meta-label">GitHub</span>
+              <span class="meta-val">github.com/AdwinThomasC &rarr;</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- PROJECT DETAILS MODAL -->
+  <div class="modal-backdrop" id="modalBackdrop">
+    <div class="modal-dialog" id="projectModal">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close modal">&times;</button>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div class="toast-popup" id="toastNotification">
+    <span id="toastText">Copied to clipboard</span>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div>
+        <strong>Adwin Thomas C</strong> &mdash; Data Scientist &amp; ML Engineer
+        <div class="footer-copy">&copy; <span id="currentYear">2026</span> Adwin Thomas C. All rights reserved.</div>
+      </div>
+      <div class="footer-links-row">
+        <a href="#summary">Summary</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a href="#hero" class="back-link">&uarr; Top</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
