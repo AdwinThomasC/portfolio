@@ -31,19 +31,56 @@ document.addEventListener('DOMContentLoaded', () => {
   // 3. Mobile Drawer Navigation
   const mobileMenuBtn = document.getElementById('mobileMenuBtn');
   const mobileDrawer = document.getElementById('mobileDrawer');
+  const mobileDrawerBackdrop = document.getElementById('mobileDrawerBackdrop');
   const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
 
+  function closeMobileDrawer() {
+    if (mobileDrawer) mobileDrawer.classList.remove('open');
+    if (mobileMenuBtn) {
+      mobileMenuBtn.classList.remove('active');
+      mobileMenuBtn.setAttribute('aria-expanded', 'false');
+    }
+    if (mobileDrawerBackdrop) mobileDrawerBackdrop.classList.remove('active');
+    document.body.classList.remove('menu-open');
+  }
+
+  function openMobileDrawer() {
+    if (mobileDrawer) mobileDrawer.classList.add('open');
+    if (mobileMenuBtn) {
+      mobileMenuBtn.classList.add('active');
+      mobileMenuBtn.setAttribute('aria-expanded', 'true');
+    }
+    if (mobileDrawerBackdrop) mobileDrawerBackdrop.classList.add('active');
+    document.body.classList.add('menu-open');
+  }
+
   if (mobileMenuBtn && mobileDrawer) {
-    mobileMenuBtn.addEventListener('click', () => {
-      const isOpen = mobileDrawer.classList.toggle('open');
-      mobileMenuBtn.setAttribute('aria-expanded', isOpen);
+    mobileMenuBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isOpen = mobileDrawer.classList.contains('open');
+      if (isOpen) {
+        closeMobileDrawer();
+      } else {
+        openMobileDrawer();
+      }
     });
 
     mobileNavLinks.forEach(link => {
       link.addEventListener('click', () => {
-        mobileDrawer.classList.remove('open');
-        mobileMenuBtn.setAttribute('aria-expanded', 'false');
+        closeMobileDrawer();
       });
+    });
+
+    if (mobileDrawerBackdrop) {
+      mobileDrawerBackdrop.addEventListener('click', () => {
+        closeMobileDrawer();
+      });
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && mobileDrawer.classList.contains('open')) {
+        closeMobileDrawer();
+      }
     });
   }
 
@@ -377,26 +414,26 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     modalBody.innerHTML = `
-      <div style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--accent); margin-bottom: 6px;">${data.context}</div>
-      <h3 style="font-size: 1.4rem; font-weight: 700; margin-bottom: 14px; color: var(--text-main); line-height: 1.3;">${data.title}</h3>
+      <div class="modal-context-tag">${data.context}</div>
+      <h3 class="modal-project-title">${data.title}</h3>
       
       ${galleryHtml}
 
-      <p style="font-size: 0.92rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 20px;">${data.overview}</p>
+      <p class="modal-overview-text">${data.overview}</p>
       
-      <div style="font-size: 0.88rem; font-weight: 600; color: var(--text-main); margin-bottom: 8px;">Key Technical Highlights:</div>
-      <ul style="display: flex; flex-direction: column; gap: 8px; margin-bottom: 22px;">
+      <div class="modal-section-title">Key Technical Highlights:</div>
+      <ul class="modal-points-list">
         ${data.points.map(p => `
-          <li style="font-size: 0.86rem; color: var(--text-muted); line-height: 1.5; padding-left: 14px; position: relative;">
-            <span style="position: absolute; left: 0; color: var(--accent);">•</span>${p}
+          <li class="modal-point-item">
+            <span class="modal-bullet">•</span>${p}
           </li>
         `).join('')}
       </ul>
 
-      <div style="font-size: 0.78rem; font-family: var(--font-mono); text-transform: uppercase; color: var(--text-dim); margin-bottom: 8px;">Tech Stack:</div>
-      <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+      <div class="modal-stack-title">Tech Stack:</div>
+      <div class="modal-stack-tags">
         ${data.stack.map(s => `
-          <span style="font-family: var(--font-mono); font-size: 0.76rem; background-color: var(--bg-subtle); color: var(--text-muted); padding: 3px 9px; border-radius: 4px; border: 1px solid var(--border-color);">${s}</span>
+          <span class="modal-stack-tag">${s}</span>
         `).join('')}
       </div>
     `;

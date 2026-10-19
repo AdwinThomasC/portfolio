@@ -24,3 +24,9 @@ tmp/
 .idea/
 *.swp
 *.swo
+
+# Local Subdirectory & Docx
+AdwinThomasC.github.io/
+*.docx
+assets/projects/raw_image*
+
